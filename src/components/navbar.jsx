@@ -21,13 +21,13 @@ const Navbar = () => {
                 value={value} 
                 onChange={(e,value)=>setValue(value)} 
                 indicatorColor='secondary'>
-                  <Tab label ="Home"/>
+                  <Tab label ="Homepage"/>
                   <Tab label="Exercises"/>
                   <Tab label="BMI"/>
                   <Tab label="Dashboard"/>
                 </Tabs>
                 <Button variant='contained' sx={{marginLeft:'auto'}}>LogIn</Button>
-                <Button variant='contained' sx={{marginLeft: '10px'}}>Signup</Button>
+                <Button variant='contained' sx={{marginLeft: '10px'}}>SignUp</Button>
 
             </Toolbar>
         </Container>
