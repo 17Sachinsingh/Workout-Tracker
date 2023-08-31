@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const[value,setValue]=useState('Home');
   return (
-    <AppBar position='static' sx>
+    <AppBar position='static' >
         <Container maxWidth="xl">
             <Toolbar disableGutters>
               <IconButton variant="contained" size='large' sx={{color:"white"}} >                
