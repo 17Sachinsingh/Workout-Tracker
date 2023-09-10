@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const[value,setValue]=useState('Home');
   return (
-    <AppBar position='static' >
+    <AppBar position='static' sx={{height:'80px'}}>
         <Container maxWidth="xl">
-            <Toolbar disableGutters>
-              <IconButton variant="contained" size='large' sx={{color:"white"}} >                
+            <Toolbar disableGutters variant='regular' >
+              <IconButton variant="contained" size='large' sx={{color:"white"}} 
+              component={Link} to='/'>                
                 <FitnessCenterIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
               </IconButton>
               
@@ -25,13 +26,15 @@ const Navbar = () => {
                 value={value} 
                 onChange={(e,value)=>setValue(value)} 
                 indicatorColor='secondary'>
-                  <Tab label ="Home" component={Link} to='/' />
+                  <Tab label ="Home" component={Link} to='/'  />
                   <Tab label="Exercises" component={Link} to='/exercises'/>
                   <Tab label="BMI" component={Link} to='/bmi'/>
                   <Tab label="Dashboard" component={Link} to='/dashboard' /> 
                 </Tabs>
-                <Button variant='contained' sx={{marginLeft:'auto'}}>LogIn</Button>
-                <Button variant='contained' sx={{marginLeft: '10px'}}>SignUp</Button>
+                <Button component={Link} to='/user' variant='contained' sx={{marginLeft:'auto'}} >
+                  Create user </Button>
+                <Button component={Link} to ='/create-exercise' variant='contained' sx={{marginLeft: '10px'}}>
+                  Create Exercise</Button>
 
             </Toolbar>
         </Container>

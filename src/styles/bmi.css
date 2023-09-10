@@ -3,63 +3,60 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
   }
    
-  .app {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-  }
-   
-  .container {
-    box-shadow: 0px 0px 12px #ccc;
-    border-radius: 8px;
-    padding: 3rem;
-  }
-   
-  input {
-    width: 100%;
-    font-size: 1.2rem;
-    padding: 15px 4px;
-    margin: 8px 0;
-    border-radius: 8px;
-  }
-   
-  .btn {
-    display: block;
-    width: 100%;
-    font-size: 1.2rem;
-    margin: 8px 0;
-    padding: 15px 0;
-    background-color: #0077EE;
-    color: #fff;
-    border: 1px solid #333;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  /* unvisited link */
-   
-  .btn-outline {
-    background-color: #fff;
-    color: #A6BCDA;
-  }
-   
-  .center {
-    text-align: center;
-    margin: 24px 0;
-  }
-   
-  p {
-    margin: 10px 0;
-  }
-   
-  .img-container {
-    text-align: center;
-  }
-   
-  .img-container img {
-    height: 200px;
-  }
+  
+
+/* Center the entire .container vertically */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 12px #ccc;
+  border-radius: 8px;
+  padding: 2rem; /* Reduce padding for a more compact appearance */
+}
+
+/* Adjust input styling for better visual alignment */
+input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 12px; /* Increase padding for better touch/click area */
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Add a border for visual separation */
+}
+
+/* Style the buttons consistently */
+.btn {
+  display: inline-block; /* Change to inline-block to fit content width */
+  font-size: 1.2rem;
+  margin: 8px;
+  padding: 12px 24px; /* Increase padding for better button size */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a subtle hover effect */
+}
+
+.btn:hover {
+  background-color: #0055cc; /* Change background color on hover */
+  color: #fff;
+}
+
+/* Center the result text and adjust margins */
+.center {
+  text-align: center;
+  margin: 24px 0;
+}
+
+/* Style the result message with a colored background */
+.center h3 {
+  background-color: #0077ee; /* Add a background color to the heading */
+  color: #fff;
+  padding: 8px 16px; /* Increase padding for better visibility */
+  border-radius: 4px;
+  margin: 0;
+}
