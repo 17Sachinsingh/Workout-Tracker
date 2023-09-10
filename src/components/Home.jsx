@@ -1,11 +1,13 @@
 import React from "react";
-import { Box, Button, Typography, Stack } from "@mui/material";
-import HeroBannerImage from "../styles/exercise-images/image3.jpg";
+import { Box, Typography, Stack } from "@mui/material";
+// import HeroBannerImage from "../styles/exercise-images/image3.jpg";
+import MotivationImage from "./Randomimage";
+import "../styles/home.css"
 const Home = () => {
   return (
-    <React.Fragment>
+    <div div className="home-page">
       <Box
-       className='box1'
+        className="box1"
         sx={{ mt: { lg: "212px", xs: "70px" }, ml: { sm: "50px" } }}
         position="relative"
         p="20px"
@@ -55,16 +57,12 @@ const Home = () => {
         >
           Exercise
         </Typography>
-        <img
-          src={HeroBannerImage}
-          alt="hero-banner"
-          className="img"
-        />
       </Box>
+      <div className="images">
+        <MotivationImage />
       
-      
-      
-    </React.Fragment>
+      </div>
+    </div>
   );
 };
 

@@ -31,7 +31,7 @@ const Exercisecard = (props) => {
         </CardContent>
         <CardActions>
           <Button size="small" as='a' href={props.link} target="_blank" >Know more</Button>
-          <Button style={{marginLeft:'auto'}}  size="small" as='a' href={props.you_link} target="_blank" >Watch </Button>
+          <Button style={{marginLeft:'auto'}} size="small" as='a' href={props.you_link} target="_blank" >Watch </Button>
         </CardActions>
       </Card>
     </div>
