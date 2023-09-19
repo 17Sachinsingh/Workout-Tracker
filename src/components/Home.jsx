@@ -58,10 +58,9 @@ const Home = () => {
           Exercise
         </Typography>
       </Box>
-      <div className="images">
-        <MotivationImage />
-      
-      </div>
+     <Box>
+      <MotivationImage/>
+     </Box>
     </div>
   );
 };

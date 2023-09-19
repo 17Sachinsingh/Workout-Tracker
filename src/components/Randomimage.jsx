@@ -27,7 +27,7 @@ const MotivationImage = () => {
 
   return (
     <div>
-      {imageData.urls && (
+      {/* {imageData.urls && (
         <img
           src={imageData.urls.regular}
           alt={`Gym Motivation by ${imageData.user.name}`}
@@ -37,7 +37,18 @@ const MotivationImage = () => {
 
           }}
         />
-      )}
+      )} */}
+      {imageData.urls && (
+  <img
+    src={imageData.urls.regular}
+    alt={`Gym Motivation by ${imageData.user.name}`}
+    style={{
+      width: '100%',
+      height: 'auto'
+    }}
+  />
+)}
+
     </div>
   );
 };
