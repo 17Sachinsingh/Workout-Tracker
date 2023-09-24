@@ -29,12 +29,12 @@ const Navbar = () => {
                   <Tab label ="Home" component={Link} to='/'  />
                   <Tab label="Exercises" component={Link} to='/exercises'/>
                   <Tab label="BMI" component={Link} to='/bmi'/>
-                  <Tab label="Dashboard" component={Link} to='/dashboard' /> 
+                  <Tab label="Summary" component={Link} to='/dashboard' /> 
                 </Tabs>
                 <Button component={Link} to='/user' variant='contained' sx={{marginLeft:'auto'}} >
                   Create user </Button>
                 <Button component={Link} to ='/create-exercise' variant='contained' sx={{marginLeft: '10px'}}>
-                  Create Exercise</Button>
+                  Add Workout </Button>
 
             </Toolbar>
         </Container>

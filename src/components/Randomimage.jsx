@@ -5,11 +5,10 @@ const MotivationImage = () => {
   const [imageData, setImageData] = useState({}); // Initialize as an empty object
 
   useEffect(() => {
-    // Replace 'YOUR_ACCESS_KEY' with your Unsplash API access key
     const accessKey = 'GjCaNjDQnqzJsxLrvWSNme_DrxEkLtohvnXS-k8G5xo';
 
     // Define search terms for gym motivation images
-    const searchTerms = [ 'workout' ,'motivation'];
+    const searchTerms = [  'gym motivation'];
     const query = searchTerms[Math.floor(Math.random() * searchTerms.length)];
 
     // Set up the API endpoint
@@ -43,8 +42,8 @@ const MotivationImage = () => {
     src={imageData.urls.regular}
     alt={`Gym Motivation by ${imageData.user.name}`}
     style={{
-      width: '100%',
-      height: 'auto'
+      width: '75%',
+      height: '50%'
     }}
   />
 )}

@@ -6,6 +6,7 @@ import "../styles/home.css"
 const Home = () => {
   return (
     <div div className="home-page">
+      <div className="first-part">
       <Box
         className="box1"
         sx={{ mt: { lg: "212px", xs: "70px" }, ml: { sm: "50px" } }}
@@ -58,9 +59,10 @@ const Home = () => {
           Exercise
         </Typography>
       </Box>
-     <Box>
+      </div>
+     <div className="image-motivation">
       <MotivationImage/>
-     </Box>
+     </div>
     </div>
   );
 };
