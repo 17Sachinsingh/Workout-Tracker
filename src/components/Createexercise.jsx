@@ -41,14 +41,29 @@ const Createexercise = () => {
     <form className="create" onSubmit={handleSubmit}> 
       <h3>Add a New Workout</h3>
 
-      <label>Excercise Title:</label>
+      {/* <label>Excercise Title:</label>
       <input 
         type="text" 
         onChange={(e) => setTitle(e.target.value)} 
         value={title}
-      />
+      /> */}
+      <label>Exercise Title:</label>
+<select onChange={(e) => setTitle(e.target.value)} value={title}>
+  <option value="">Select an exercise</option>
+  <option value="Push ups">Push ups</option>
+  <option value="Pull ups">Pull ups</option>
+  <option value="Squats">Squats</option>
+  <option value="Deadlifts">Deadlifts</option>
+  <option value="Walking lunges">Walking lunges</option>
+  <option value="Bicep Curls">Bicep Curls</option>
+  <option value="Overhead Tricep Extensions">Overhead Tricep Extensions</option>
+  <option value="Boat Pose">Boat Pose</option>
+  <option value="Planks">Planks</option>
+  <option value="Rowing">Rowing</option>
+</select>
 
-      <label>Load (in kg):</label>
+
+      <label>Number of Sets:</label>
       <input 
         type="number" 
         onChange={(e) => setLoad(e.target.value)} 
