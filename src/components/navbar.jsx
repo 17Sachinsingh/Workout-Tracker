@@ -31,9 +31,9 @@ const Navbar = () => {
                   <Tab label="BMI" component={Link} to='/bmi'/>
                   <Tab label="Summary" component={Link} to='/dashboard' /> 
                 </Tabs>
-                <Button component={Link} to='/user' variant='contained' sx={{marginLeft:'auto'}} >
-                  Create user </Button>
-                <Button component={Link} to ='/create-exercise' variant='contained' sx={{marginLeft: '10px'}}>
+                {/* <Button component={Link} to='/user' variant='contained' sx={{marginLeft:'auto'}} >
+                  Create user </Button> */}
+                <Button component={Link} to ='/create-exercise' variant='contained' sx={{marginLeft: 'auto'}}>
                   Add Workout </Button>
 
             </Toolbar>

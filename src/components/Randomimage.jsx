@@ -42,8 +42,9 @@ const MotivationImage = () => {
     src={imageData.urls.regular}
     alt={`Gym Motivation by ${imageData.user.name}`}
     style={{
-      width: '75%',
-      height: '50%'
+      width: '75vh',
+      height: '100vh',
+      marginLeft:'auto'
     }}
   />
 )}

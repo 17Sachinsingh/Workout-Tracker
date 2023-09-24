@@ -4,7 +4,7 @@
 .footer {
     background-color:gray;
     color:#fff;
-    
+    bottom:0;
   }
   
   /* Center the content within the container */
