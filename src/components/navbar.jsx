@@ -56,6 +56,8 @@ const Navbar = () => {
             <Tab label="Summary" component={Link} to="/dashboard" />
           </Tabs>
           {isAuthenticated ? (
+            <>
+            <p style={{marginLeft:'auto',color:"mistyrose"}}> Welcome {user.name}</p>
             <Button
               onClick={() =>
                 logout({ logoutParams: { returnTo: window.location.origin } })
@@ -67,6 +69,8 @@ const Navbar = () => {
               Log Out
           
             </Button>
+            
+            </>
           ) : (
             <Button
               onClick={() => loginWithRedirect()}
