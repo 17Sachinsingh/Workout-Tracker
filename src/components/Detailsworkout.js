@@ -13,6 +13,7 @@ const Detailsworkout = ({ workout }) => {
   return (
     <div className="workout-details">
       <h4>{workout.title}</h4>
+      
       <p>
         <strong>Number of sets: </strong>
         {workout.load}

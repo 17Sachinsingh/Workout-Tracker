@@ -14,7 +14,7 @@ import Planks from "../styles/exercise-images/planks.jpg";
 const Resistance = () => {
   return (
     <div>
-      <h2 id="resistance">Resitance Exercises</h2>
+      <h2 id="resistance">Indermediate Workout</h2>
     
     <div className="resistance">
     <Exercisecard
@@ -50,6 +50,10 @@ const Resistance = () => {
          link="https://www.menshealth.com/uk/fitness/a748582/how-to-deadlift/"
          you_link="https://www.youtube.com/watch?v=XxWcirHIwVo"
          />
+         </div>
+         <h2 id="resistance">Extreme Workout</h2>
+         <div className="resistance">
+         
        <Exercisecard
          title="Walking Lunges"
          image={Lunges}

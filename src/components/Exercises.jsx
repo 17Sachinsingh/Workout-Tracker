@@ -12,8 +12,8 @@ import Resistance from "./Resistance";
 const Exercises = () => {
   return (
     <>
-    <Resistance/>
-     <h2 id="cardio">Cardio Exercises</h2>
+    
+     <h2 id="cardio">Easy Workout</h2>
     <div className="exercise-parent">
     
       <Exercisecard
@@ -66,6 +66,7 @@ const Exercises = () => {
         link="https://www.healthline.com/health/jumping-rope-to-lose-weight"
         you_link="https://www.youtube.com/watch?v=1BZM2Vre5oc"
       />
+      <Resistance/>
     </div>
     
     </>

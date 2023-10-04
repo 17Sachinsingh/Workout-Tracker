@@ -94,6 +94,18 @@ const Home = () => {
           <MotivationImage />
         </div>
       </div>
+      <div className="features">
+
+      <ul className="custom-symbol">
+      <li>Plan your training and track your progress.</li>
+      <br/>
+      <li>Keep track of your best sets, body mass index  and more.</li>
+      <br/>
+      <li>Log unlimited workouts</li>
+      <br/>
+      <li>Exercise Guides & Muscles Worked</li>
+      </ul>
+      </div>
     </>
   );
 };
