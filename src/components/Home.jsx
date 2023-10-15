@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Box, Typography, Stack } from "@mui/material";
 import MotivationImage from "./Randomimage";
 import "../styles/home.css";
-import Home2img from "../styles/exercise-images/home2img.jpg";
 
 const Home = () => {
   const [motivationText, setMotivationText] = useState("");

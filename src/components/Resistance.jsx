@@ -14,7 +14,7 @@ import Planks from "../styles/exercise-images/planks.jpg";
 const Resistance = () => {
   return (
     <div>
-      <h2 id="resistance">Indermediate Workout</h2>
+      <h2 id="resistance1">Indermediate Workout</h2>
     
     <div className="resistance">
     <Exercisecard

@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import Highknee from "../styles/exercise-images/high-knee.jpg";
 import Powerwalk from "../styles/exercise-images/power-walking.jpg";
@@ -10,9 +11,12 @@ import "../styles/exercises.css";
 import Exercisecard from "./Exercisecard";
 import Resistance from "./Resistance";
 const Exercises = () => {
+  const exercise_add=()=>{
+
+  }
   return (
     <>
-    
+   {/* <Button variant="contained" onClick={exercise_add}>Add Exercise</Button> */}
      <h2 id="cardio">Easy Workout</h2>
     <div className="exercise-parent">
     
