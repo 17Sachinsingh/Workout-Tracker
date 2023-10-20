@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Typography,
@@ -11,10 +11,12 @@ import {
 } from "@mui/material";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import { Link } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
-const Navbar = () => {
-  const [value, setValue] = useState("Home");
-  const { loginWithRedirect, logout,isAuthenticated,user } = useAuth0();
+const Navbar = ({ isLoggedIn2, onLogout }) => {
+  const handleLogout = () => {
+    // Calling  the logout function
+    onLogout();
+  };
+  const [selectedTab, setSelectedTab] = useState("Home");
 
   return (
     <AppBar position="static" sx={{ height: "80px" }}>
@@ -45,42 +47,37 @@ const Navbar = () => {
           </Typography>
           <Tabs
             textColor="inherit"
-            value={value}
-            onChange={(e, value) => setValue(value)}
+            value={selectedTab}
+            onChange={(e, newValue) => setSelectedTab(newValue)}
             indicatorColor="secondary"
           >
             <Tab label="Home" component={Link} to="/" />
-            <Tab label="Exercises" component={Link} to="/exercises" />
-            <Tab label="BMI" component={Link} to="/bmi" />
-            <Tab label="Add Workout" component={Link} to="/create-exercise" />
-            <Tab label="Summary" component={Link} to="/dashboard" />
+            {isLoggedIn2 ? (
+              <>
+                <Tab label="Exercises" component={Link} to="/exercises" />
+                <Tab label="BMI" component={Link} to="/bmi" />
+                <Tab
+                  label="Add Workout"
+                  component={Link}
+                  to="/create-exercise"
+                />
+                <Tab label="Summary" component={Link} to="/dashboard" />
+                <Button
+                  color="error"
+                  size="medium"
+                  onClick={handleLogout}
+                  sx={{ marginLeft: "auto" }}
+                >
+                  Logout
+                </Button>
+              </>
+            ) : (
+              <>
+                <Tab label="Register" component={Link} to="/signup" />
+                <Tab label="Sign In" component={Link} to="/signin" />
+              </>
+            )}
           </Tabs>
-          {isAuthenticated ? (
-            <>
-            <p style={{marginLeft:'auto',color:"mistyrose"}}> Welcome {user.name}</p>
-            <Button
-              onClick={() =>
-                logout({ logoutParams: { returnTo: window.location.origin } })
-              }
-              variant=" outlined"
-              sx={{ marginLeft: "auto" }}
-            >
-             
-              Log Out
-          
-            </Button>
-            
-            </>
-          ) : (
-            <Button
-              onClick={() => loginWithRedirect()}
-              variant=" outlined"
-              sx={{ marginLeft: "auto" }}
-            >
-              Log In
-            </Button>
-            
-          )}
         </Toolbar>
       </Container>
     </AppBar>

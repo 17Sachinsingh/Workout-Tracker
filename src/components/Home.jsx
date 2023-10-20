@@ -58,6 +58,7 @@ const Home = () => {
   }, []);
   return (
     <>
+    
       <p style={{ fontSize: "18px", color: "#333", lineHeight: "1.5" ,margin:'20px',textAlign:'center',fontFamily:'monospace',fontSize:'22px',fontStyle:'italic'}}>
         <q>{motivationText}</q>
       </p>

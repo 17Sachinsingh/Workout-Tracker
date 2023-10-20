@@ -1,0 +1,48 @@
+/* Add this to your CSS file */
+
+.success-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -100px;
+  }
+  
+  /* Styling for the card component */
+  Card {
+    width: 300px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  CardContent {
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the "Go to Home" button */
+  .success-link {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  Button {
+    /* background-color: #007bff; Blue color, change to your preferred color */
+  }
+  
+  Button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

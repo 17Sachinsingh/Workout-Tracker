@@ -75,5 +75,30 @@ ul.custom-symbol li::before {
     font-size: 1.2em; /* Adjust the font size as needed */
     margin-right: 0.5em; /* Adjust the spacing between the symbol and text */
 }
+/* Add styles for the dark mode toggle button */
+/* Light mode styles */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dark mode button styles */
+.dark-mode-toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
  
   

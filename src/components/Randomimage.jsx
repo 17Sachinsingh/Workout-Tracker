@@ -45,7 +45,7 @@ const MotivationImage = () => {
       width: '75vh',
       height: '100vh',
       marginLeft:'auto',
-      marginBottom:'-20%'
+      
     }}
   />
 )}
