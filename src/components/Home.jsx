@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Box, Typography, Stack } from "@mui/material";
 import MotivationImage from "./Randomimage";
+import BMI from "../styles/exercise-images/bmi.jpg";
+import Progress from "../styles/exercise-images/progress.jpg";
+import Reference from "../styles/exercise-images/reference.jpg";
+import Summary from "../styles/exercise-images/summarize.webp";
 import "../styles/home.css";
-
+import FeatureCard from "./FeatureCard";
 const Home = () => {
   const [motivationText, setMotivationText] = useState("");
   const motivationQuotes = [
@@ -47,9 +51,6 @@ const Home = () => {
     "A champion is someone who gets up when they can’t. – Jack Dempsey",
     "The difference between the impossible and the possible lies in a person’s determination. – Tommy Lasorda",
     "When you have a clear vision of your goal, it’s easier to take the first step toward it. – LL Cool J",
-
-
-    
   ];
   useEffect(() => {
     // Generate random motivation text when the component mounts (on website load or refresh)
@@ -58,8 +59,18 @@ const Home = () => {
   }, []);
   return (
     <>
-    
-      <p style={{ fontSize: "18px", color: "#333", lineHeight: "1.5" ,margin:'20px',textAlign:'center',fontFamily:'monospace',fontSize:'22px',fontStyle:'italic'}}>
+      <p
+        style={{
+          fontSize: "18px",
+          color: "#333",
+          lineHeight: "1.5",
+          margin: "20px",
+          textAlign: "center",
+          fontFamily: "monospace",
+          fontSize: "22px",
+          fontStyle: "italic",
+        }}
+      >
         <q>{motivationText}</q>
       </p>
       <div className="home-page">
@@ -94,17 +105,32 @@ const Home = () => {
           <MotivationImage />
         </div>
       </div>
+      <div className="section-separator"></div>
       <div className="features">
-
-      <ul className="custom-symbol">
-      <li>Plan your training and track your progress.</li>
-      <br/>
-      <li>Keep track of your best sets, body mass index  and more.</li>
-      <br/>
-      <li>Log unlimited workouts</li>
-      <br/>
-      <li>Exercise Guides & Muscles Worked</li>
-      </ul>
+        <FeatureCard
+          title="Tailor Your Fitness Journey"
+          description=" Personalize workouts to fit your goals. Achieve results that are uniquely yours."
+          imageUrl={Progress}
+          className="FeatureCard"
+        />
+        <FeatureCard
+          title="Track Your Health with BMI"
+          description="Assess your fitness at a glance. Get personalized insights and set achievable wellness goals."
+          imageUrl={BMI}
+          className="FeatureCard"
+        />
+        <FeatureCard
+          title="Track Your Progress"
+          description="View comprehensive workout summaries. Analyze your fitness journey and stay motivated."
+          imageUrl={Summary}
+          className="FeatureCard"
+        />
+        <FeatureCard
+          title="Explore Exercise Guides"
+          description="Access detailed exercise information. Learn proper techniques and stay safe on your fitness journey."
+          imageUrl={Reference}
+          className="FeatureCard"
+        />
       </div>
     </>
   );

@@ -1,104 +1,99 @@
-
 .home-page {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .first-part {
-    flex: 1;
-  }
-  
-  .box1 {
-    max-width: 600px;
-    margin-top: -150px;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .explore-button {
-    display: inline-block;
-    width: 50%;
-    text-decoration: none;
-    margin-top: 20px;
-    padding: 10px 10px;
-    font-size: 22px;
-    text-transform: uppercase;
-    background-color: #FF2625;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  
-  
-  .explore-button:hover {
-    background-color: #D91E1E;
-  }
-  
-  
-  
-  .image-motivation {
-    flex: 1;
-    text-align: center;
-  }
-
-  .features{
-    margin: 10px 20px;
-    padding: 20px;
-    /* background-color: #f0f0f0; */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    width: 95%;
-    font-size: 20px;
-    line-height: 30px;
-  }
-  li:hover{
-    background-color: #e0e0e0;
-    color:#007bff;
-  }
-  ul.custom-symbol {
-    list-style: none; /* Remove default list-style */
-    padding-left: 1.5em; /* Adjust the padding as needed for spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
 }
 
-ul.custom-symbol li::before {
-    content: "\00BB"; /* Unicode character for a checkmark (✔) */
-    color: #007bff; /* Change the color as desired */
-    font-size: 1.2em; /* Adjust the font size as needed */
-    margin-right: 0.5em; /* Adjust the spacing between the symbol and text */
+.first-part {
+  flex: 1;
 }
-/* Add styles for the dark mode toggle button */
-/* Light mode styles */
-body {
+
+.box1 {
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-motivation {
+  flex: 1;
+  text-align: center;
+}
+
+
+
+.explore-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: larger;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.FeatureCard {
+  flex: 0 0 calc(50% - 10px);
+  margin: 0 0 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  color: #333;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
-/* Dark mode styles */
-.dark-mode {
-  background-color: #333;
-  color: #fff;
+.FeatureCard img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100px; /* Adjust the max-height for smaller images */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
-/* Dark mode button styles */
-.dark-mode-toggle-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+.FeatureCard .CardContent {
+  padding: 16px;
+  border-radius: 0 0 10px 10px;
 }
 
+.FeatureCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+}
 
- 
-  
+.FeatureCard h5 {
+  font-size: 16px; /* Adjust the font size for the title */
+  margin-bottom: 8px;
+}
+
+.FeatureCard p {
+  font-size: 14px; /* Adjust the font size for the description */
+  color: #666;
+  margin-bottom: 0;
+}
+
+.section-separator {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #007bff, transparent);
+  margin: 20px 0;
+}

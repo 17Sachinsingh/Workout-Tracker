@@ -5,7 +5,6 @@ import Exercises from './components/Exercises';
 import Bmi from './components/Bmi';
 import Dashboard from './components/Dashboard';
 import Createexercise from './components/Createexercise';
-import Usercreate from './components/Usercreate';
 import { BrowserRouter, Route,Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Navbar from './components/navbar';
@@ -27,7 +26,6 @@ function App() {
         <Route exact path='/dashboard' element={<Dashboard/>}/>
         <Route  exact path='/bmi' element={<Bmi/>}/>
         <Route  exact path='/create-exercise' element={<Createexercise/>}/>
-        <Route  exact path='/user' element={<Usercreate/>}/>
         <Route exact path='/signup' element={<Signup/>}/>
         <Route path="/signin" element={<Signin setIsLoggedIn2={setIsLoggedIn2} />} />
      </Routes>
