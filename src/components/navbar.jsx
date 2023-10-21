@@ -9,6 +9,7 @@ import {
   Tabs,
   Tab,
 } from "@mui/material";
+import '../styles/home.css'
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import { Link } from "react-router-dom";
 const Navbar = ({ isLoggedIn2, onLogout }) => {

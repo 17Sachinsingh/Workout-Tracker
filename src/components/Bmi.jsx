@@ -29,7 +29,12 @@ const Bmi = () => {
    
    
     let reload = () => {
-      window.location.reload()
+      setWeight('');
+      setHeight(' ')
+    
+    
+    
+     
     }
   return (
     <div className="app">

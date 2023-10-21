@@ -9,8 +9,8 @@ const loginUser = async (req, res) => {
     if (!user || user.password !== password) {
       return res.status(401).json({ error: 'Login failed' });
     }
-
-    res.json({ message: 'Login successful' });
+    const { name } = user;
+    res.json({ message: 'Login successful',name });
   } catch (error) {
     console.error('Error:', error);
     res.status(500).json({ error: 'Login failed' });

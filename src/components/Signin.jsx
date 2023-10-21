@@ -28,6 +28,9 @@ const Signin = ({setIsLoggedIn2 }) => {
       if (response.ok) {
         const data = await response.json();
         console.log(data); 
+        console.log(data.name)
+        const authToken = data.token;
+        localStorage.setItem('authToken', authToken);
         setUserName(data.name); 
         setIsLoggedIn(true); 
         setIsLoggedIn2(true);
@@ -102,3 +105,4 @@ const Signin = ({setIsLoggedIn2 }) => {
 };
 
 export default Signin;
+

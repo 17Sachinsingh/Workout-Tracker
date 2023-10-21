@@ -8,7 +8,7 @@ const SuccessCard = ({ userName }) => {
     <div className="success-card">
       <Card>
         <CardContent>
-          <h3>Welcome, {userName}!</h3>
+          <h2 style={{color:'navy'}}>Welcome, {userName}!</h2>
           <p>You are logged in.</p>
           <Button variant="contained" color="primary">
             <Link to="/" className="success-link">

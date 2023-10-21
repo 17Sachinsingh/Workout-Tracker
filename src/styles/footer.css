@@ -1,13 +1,9 @@
-/* Footer.css */
-
-/* Style for the main footer container */
-.footer {
-    background-color:gray;
+ .footer {
+    background-color:#aabfc2;
     color:#fff;
     bottom:0;
   }
   
-  /* Center the content within the container */
   .container {
     display: flex;
     justify-content: space-around;
@@ -20,9 +16,7 @@
     flex-wrap: wrap;
     align-items: center;
  }
-  
-  /* Style for the contact and social media sections */
-  .footer-contact,
+    .footer-contact,
   .footer-social {
     text-align: center;
   }
@@ -30,11 +24,12 @@
   .footer-contact p,
   .footer-social p {
     margin: 5px 0;
+    color: #3434a4;
   }
   
   .footer-contact a,
   .footer-social a {
-    color: #fff;
+    color: #3434a4;
     text-decoration: none;
     margin: 0 10px;
   }
@@ -43,16 +38,14 @@
   .footer-social a:hover {
     text-decoration: underline;
     background-color:steelblue;
-    /* color: #fff; */
+    color: white;
   }
   
-  /* Style for Font Awesome icons */
   .footer-social .fa {
     margin: 0 10px;
   }
   
   
-  /* Responsive styles */
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
@@ -68,4 +61,7 @@
       margin-top: 20px;
     }
   }
+   
   
+
+

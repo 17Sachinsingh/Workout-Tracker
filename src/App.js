@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import Home from './components/Home';
 import Exercises from './components/Exercises';
 import Bmi from './components/Bmi';
@@ -12,9 +12,21 @@ import Signup from './components/Signup';
 import Signin from './components/Signin';
 function App() {
   const [isLoggedIn2, setIsLoggedIn2] = useState(false);
+  useEffect(() => {
+    // Check for the authentication token in localStorage on page load
+    const authToken = localStorage.getItem('authToken');
+
+    if (authToken) {
+      // Token found, user is authenticated
+      setIsLoggedIn2(true);
+    }
+  }, []);
   const handleLogout = () => {
-  
+    
+
+    localStorage.removeItem("authToken");
     setIsLoggedIn2(false);
+    window.location.href='/';
   };
   return (
     <BrowserRouter>
