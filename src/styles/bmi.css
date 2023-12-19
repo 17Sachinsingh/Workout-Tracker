@@ -8,7 +8,7 @@
    
   
 
-/* Center the entire .container vertically */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -16,47 +16,45 @@
   align-items: center;
   box-shadow: 0px 0px 12px #ccc;
   border-radius: 8px;
-  padding: 2rem; /* Reduce padding for a more compact appearance */
+  padding: 2rem; 
 }
 
-/* Adjust input styling for better visual alignment */
+
 input {
   width: 100%;
   font-size: 1.2rem;
-  padding: 12px; /* Increase padding for better touch/click area */
+  padding: 12px; 
   margin: 8px 0;
   border-radius: 8px;
-  border: 1px solid #ccc; /* Add a border for visual separation */
+  border: 1px solid #ccc; 
 }
 
-/* Style the buttons consistently */
 .btn {
-  display: inline-block; /* Change to inline-block to fit content width */
+  display: inline-block; 
   font-size: 1.2rem;
   margin: 8px;
-  padding: 12px 24px; /* Increase padding for better button size */
+  padding: 12px 24px; 
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Add a subtle hover effect */
+  transition: background-color 0.3s ease; 
 }
 
 .btn:hover {
-  background-color: #0055cc; /* Change background color on hover */
+  background-color: #0055cc; 
   color: #fff;
 }
 
-/* Center the result text and adjust margins */
+
 .center {
   text-align: center;
   margin: 24px 0;
 }
 
-/* Style the result message with a colored background */
 .center h3 {
-  background-color: #0077ee; /* Add a background color to the heading */
+  background-color: #0077ee; 
   color: #fff;
-  padding: 8px 16px; /* Increase padding for better visibility */
+  padding: 8px 16px; 
   border-radius: 4px;
   margin: 0;
 }

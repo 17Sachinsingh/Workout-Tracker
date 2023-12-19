@@ -34,6 +34,8 @@ const Footer = () => {
           <a href="https://instagram.com/mr_singhsachin?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer">
             <InstagramIcon/>
           </a>
+          <p style={{color:'red'}}>&copy; 2023 Sachin. All rights reserved.</p>
+
         </div>
       </div>
     </div>

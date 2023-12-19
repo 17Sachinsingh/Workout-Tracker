@@ -8,7 +8,7 @@ const MotivationImage = () => {
     const accessKey = 'GjCaNjDQnqzJsxLrvWSNme_DrxEkLtohvnXS-k8G5xo';
 
     // Define search terms for gym motivation images
-    const searchTerms = [  ' muscle man', 'muscular man',];
+    const searchTerms = [  'bodybuilding'];
     const query = searchTerms[Math.floor(Math.random() * searchTerms.length)];
 
     // Set up the API endpoint

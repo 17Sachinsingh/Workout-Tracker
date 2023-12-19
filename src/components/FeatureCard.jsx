@@ -14,7 +14,7 @@ const FeatureCard = ({ title, description, imageUrl }) => {
         flex: "0 0 calc(50% - 10px)",
         flexDirection: "row",
         transition: "transform 0.2s, box-shadow 0.2s, background-color 0.2s",
-        maxHeight: "200px", /* Adjust the max height as needed */
+        maxHeight: "200px", 
       }}
     >
       <img
@@ -25,7 +25,7 @@ const FeatureCard = ({ title, description, imageUrl }) => {
           height: "auto",
           objectFit: "cover",
           borderRadius: "10px 0 0 10px",
-          maxHeight: "200px", /* Adjust the max height for the image */
+          maxHeight: "200px", 
         }}
       />
       <CardContent sx={{ flex: 1, borderRadius: "0 10px 10px 0", padding: 2 }}>

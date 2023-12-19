@@ -1,4 +1,4 @@
-const Register = require('../models/register'); // Assuming your model is in "models/register.js"
+const Register = require('../models/register');
 
 // Controller to handle user login
 const loginUser = async (req, res) => {
